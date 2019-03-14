@@ -2,6 +2,7 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
+	color: #fff;
 }
 html
 {
@@ -26,23 +27,11 @@ header{
 body
 {
 	background-image: url(back.jpg);
-	height: 100vh;
+	height: 100%;
 	background-position: center;
 	background-size: cover;
 
 }
-
-.text-box {
-
-position: absolute;
-width: 1140px;
-top:50%;
-left:50%;
-transform: translate(-50%,50%);
-
-
-}
-
 h1 
 {
 margin: 0;
@@ -50,9 +39,87 @@ margin: 0;
 }
 .logo
 {
-	padding: 10px;
-margin:16px;
+float:left;
+padding: 10px;
+margin:19.5px;
 width: 15%;
 height: 5%;
 
+}
+.mnav
+{
+
+list-style: none;
+float:right;
+
+
+
+}
+.mnav li {
+
+display: inline-block;
+padding: 10px;
+margin:16px;
+
+
+
+}
+
+.mnav li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+
+}
+
+
+.mnav li a:hover{
+	color: #DFE3E4;	
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	border-bottom: 2px solid #DFE3E4 ;
+}
+
+
+
+.define
+{
+
+
+height: 100vh;
+}
+
+.foot
+{
+
+background-color: #1C1A1B;
+height: 10vh;
+
+
+}
+
+h4
+{
+	color:#DFE3E4;
+	padding: 24px;
+}
+
+.text-box {
+
+background-color: #fff;
+background-attachment: fixed;
+margin-top: 100px;
+height: 81vh;
+
+border: 2px solid black;
+border-radius: 10px;
+
+}
+
+.user {
+	float:right;
+	font-size: 20px;
+	display: inline-block;
 }
