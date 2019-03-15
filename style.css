@@ -1,0 +1,118 @@
+/*-----------------------------------*/
+/* BASIC SETUP */
+/*-----------------------------------*/
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #555;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-----------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #2f3640;
+}
+
+body {
+	background-image: url(background.png);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+ 
+/*--HEADINGS--*/
+
+h4 {
+    text-decoration: none;
+    font-size: 15px;
+	color:#DFE3E4;
+	padding: 10px;
+}
+
+/*--NAVBAR--*/
+
+.logo {
+    float:left;
+    padding: 15px;
+    height: 50px;
+    width: 200px;
+    margin: 10px
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 10px;
+    margin: 12px;
+}
+
+.main-nav li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
+.main-nav li a:hover {
+	color: #1dd1a1;	
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	border-bottom: 2px solid #1dd1a1 ;
+}
+
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}*/
+
+/*-----------------------------------*/
+/* SECTION */
+/*-----------------------------------*/
+
+.section-1 {
+    height: 100vh;
+    padding: 25px;
+}
+
+.text-box {
+    margin-top: 60px;
+    height: 80vh;
+    border: 2px solid #2f3640; 
+    background-color: #2f3640;  
+    border-radius: 5px;
+}
+
+
+/*-----------------------------------*/
+/* FOOTER */
+/*-----------------------------------*/
+
+.footer {
+    background-color: #2f3640;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+}
