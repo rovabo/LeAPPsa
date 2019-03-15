@@ -116,3 +116,47 @@ h4 {
     padding: 15px;
     font-family: 'Merriweather', serif;
 }
+
+.Text-descriptiv
+{
+text-indent: 45px;
+padding: 40px;
+font-size: 30px;
+text-align: justify;
+}
+
+input[type=text],select {
+    color:#000000;
+  width: 50%;
+  padding:20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding:20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.col
+{
+   color:black
+}
+
+form {
+    padding: 80px;
+  text-align: center;
+}
