@@ -83,19 +83,13 @@ h4 {
     border-bottom: 2px solid #1dd1a1;
 }
 
-/*.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}*/
-
 /*-----------------------------------*/
 /* SECTION */
 /*-----------------------------------*/
 
 .section-1 {
     height: auto;
-    padding: 45px;
+    padding: 55px;
 }
 
 .text-box {
@@ -120,6 +114,11 @@ h4 {
 
 .box li {
     font-size: 20px;
+}
+
+.box li:hover {
+    font-size: 20px;
+    color: #1dd1a1;
 }
 
 
