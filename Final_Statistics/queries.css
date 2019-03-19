@@ -3,7 +3,7 @@
 /*--------------------------------------*/
 
 @media only screen and (max-width: 1200px) {
-    .text-box {
+    .box {
         height: auto;
         margin: auto;
         width: 60%;
@@ -21,7 +21,7 @@
 /*--------------------------------------*/
 
 @media only screen and (max-width: 1090px) {
-    .text-box {
+    .box {
         height: auto;
         margin: auto;
         width: 80%;
@@ -62,7 +62,7 @@
         margin: auto;
     }
 
-    .text-box {
+    .box {
         height: auto;
         margin: auto;
         width: 90%;
@@ -79,22 +79,19 @@
 /*--------------------------------------*/
 
 @media only screen and (max-width: 700px) {
-    .text-box {
+    .box {
         height: auto;
         margin: auto;
         width: 90%;
+		padding: 40px;
+        text-align: justify;
+        list-style: none;
     }
 
     .logo {
         float: left;
         display: inline-block;
         margin-left: auto;
-    }
-
-    .box {
-        padding: 40px;
-        text-align: justify;
-        list-style: none;
     }
 
 }
@@ -104,7 +101,7 @@
 /*--------------------------------------*/
 
 @media only screen and (max-width: 480px) {
-    .text-box {
+    .box {
         height: auto;
         margin: auto;
         width: 90%;
@@ -112,10 +109,7 @@
         background-color: #2f3640;
         border-radius: 8px;
         font-family: 'Merriweather', serif;
-    }
-
-    .box {
-        padding: 30px;
+		padding: 30px;
         text-align: justify;
         list-style: none;
     }
