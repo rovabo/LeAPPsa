@@ -1,0 +1,188 @@
+/*-----------------------------------*/
+/* BASIC SETUP */
+/*-----------------------------------*/
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #555;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-----------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #2f3640;
+}
+
+body {
+	background-image: url(background.png);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+ 
+/*--HEADINGS--*/
+
+h4 {
+    text-decoration: none;
+    font-size: 15px;
+	color:#DFE3E4;
+	padding: 10px;
+}
+
+/*--NAVBAR--*/
+
+.logo {
+    float:left;
+    padding: 15px;
+    height: 50px;
+    width: 200px;
+    margin: 10px
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 10px;
+    margin: 12px;
+}
+
+.main-nav li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
+.main-nav li a:hover {
+	color: #1dd1a1;	
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	border-bottom: 2px solid #1dd1a1 ;
+}
+
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}*/
+
+/*-----------------------------------*/
+/* SECTION */
+/*-----------------------------------*/
+
+.section-1 {
+    height: auto;
+    padding: 85px;
+}
+/*class used for <h1> heading*/
+.head1
+{
+  font-family: 'Merriweather', serif;
+}
+/*class used for the whole box*/
+.text-box {
+    margin: auto;
+    width: 60%;
+    padding:50px; 
+    border: 4px solid #DFE3E4; 
+    background-color: #2f3640;  
+    border-radius: 5px;
+}
+/*class used for the text/ <p>*/
+.Text-descriptiv
+{
+font-family: 'Merriweather', serif;
+text-align: justify;
+}
+/*class used for box where you insert your question/the box from which you chose to how many friends you send the question*/
+input[type=text],select {
+  border: 4px solid #1dd1a1;
+font-family: 'Merriweather', serif;
+color:#000000;
+height: 35px;
+width:50%;
+margin: 8px 0;
+ border-radius: 8px;
+/*The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+The width and height properties (and min/max properties) includes content, padding and border */
+ box-sizing: border-box;
+}
+/*class used for the submit button*/
+input[type=submit] {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  height: auto;
+  width:50%;
+  background-color: #1dd1a1;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  /* The cursor property specifies the mouse cursor to be displayed when pointing over an element.*/
+  cursor: pointer;
+  border: 4px solid #1dd1a1;
+
+}
+/*class used for the submit button, when where put the cursor on it*/
+input[type=submit]:hover {
+   border: 4px solid #00cec9;
+  background-color: #00CEC9;
+  border-radius: 8px;
+}
+/*class used for the elements from <select>*/
+
+.col
+{
+      font-family: 'Merriweather', serif;
+   color:#000000;
+}
+/*class used for the elements from form*/
+
+form {
+   height:100%; 
+    width:100%;
+  text-align: center;
+}
+
+/*class used for h2 heading*/
+
+.txt
+{
+ font-family: 'Merriweather', serif;
+font-size: 100%;
+}
+
+/*-----------------------------------*/
+/* FOOTER */
+/*-----------------------------------*/
+
+.footer {
+    background-color: #2f3640;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+
+  
