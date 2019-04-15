@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<link rel="stylesheet" type="text/css" href="newedit.css">
+		<meta charset="utf-8"> 
+		<title> Raport </title>
+	</head>
+
+	<body>
+		<header>
+			<h1> Leappsa </h1>
+			<div>
+				<h3> Autori: </h3>
+				<ol>
+					<li> Braneanu Valentin </li>                      
+					<li> Rauleac Robert </li>
+					<li> Trufanda Bogdan </li>		
+				</ol>
+			</div>
+		</header>
+		
+		<section class="arrange">
+			<h2> Arhitectura </h2>
+			<section>
+				<h3> Register/Login </h3>
+				<p>
+					Utilizatorol isi va introduce E-mail-ol personal ori pentru logare, ori pentru inregistrare. Apoi utilizatorol va fi plasat pe pagina Question.
+				</p>
+			</section>
+			
+			<section>
+				<h3> Question </h3>
+				<p>
+					Utilizatorol isi va introduce intrebarea si va alege numarol de prieteni carora li se va trimite intrebarea.
+				</p>
+			</section>
+			
+			<section>
+				<h3> Answers </h3>
+				<p>
+					Utilizatorol isi va putea vedea intrebarea pe care a pus-o, cat si raspunsurile prietenilor.Cand utilizatorol va da click pe userol care a pus o intrebare, va fi redirectionat la o pagina cu intrebarea acelui utilizator.
+				</p>
+			</section>
+			
+			<section>
+				<h3> Notifications </h3>
+				<p>
+					Utilizatorol va putea vedea intrebarile primite, si le va accesa printr-un click. Apoi il va duce pe pagina de Answers, unde utilizatorol poate adauga raspunsol la intrebarea primita.
+				</p>
+			</section>
+			
+			<section>
+				<h3> Statistics </h3>
+				<p>
+					Utilizatorol va vedea diferite statistici legate de site. 
+				</p>
+			</section>
+			
+			<section>
+				<h3> Tree </h3>
+				<p>
+					Utilizatorol vede toate intrebarile care au fost puse pe site. Cand va da click pe ea, se va duce pe pagina Answers si va vedea raspunsurile.
+				</p>
+			</section>
+		</section>
+		
+		<section class="arrange">
+			<h2> Metode </h2>
+			<section>
+				<h3> Database </h3>
+				<p>
+					Database_creation() <br>
+					CREATE TABLE Users ( <br>
+					email varchar2(255) NOT NolL, <br>
+					question varchar2(255) <br>
+					answers varchar2(255) <br>
+					friends number(38) <br>
+					) <br>
+				</p>
+			</section>
+			
+			<section>
+				<h3> Register/Login </h3>
+				<section>
+					<p> //Cookie care va retine sesiunea utilizatorolui. </p>
+					<h4> Insert_email() </h4>
+					<p>INSERT INTO Users (email) values ($email)</p>
+				</section>
+				
+				<section>
+					<h4> Verify() </h4>
+					<p> email_verify(string $email) : bool </p>
+				</section>
+			</section>
+			
+			<section>
+				<h3> Question </h3>
+				<section>
+					<h4> Insert() </h4>
+					<p> INSERT INTO Users (question,nr_friends) values ($question_input,$number_of_friends) </p>
+				</section>
+				
+				<section>
+					<h4> Generate_URL() </h4>
+					<p> http_build_query( $URL ) </p>
+				</section>
+			</section>
+			
+			<section>
+				<h3> Answers </h3>
+				<section>
+					<h4> Insert() </h4>
+					<p> INSERT INTO Users (answer) values ($answer_input) </p>
+				</section>
+			</section>
+			
+			<section>
+				<h3> Notifications </h3>
+				<section>
+					<h4> Generate_random_friends() </h4>
+					<p> 
+						for(i=1;i&lt;=$number_of_friends:++i) <br>
+						{x=RandBetween(1,max_nr_of_friends) <br>
+						send_Notification(x)} <br>
+					</p>
+				</section>
+			</section>
+			
+			<section>
+				<h3> Statistics </h3>
+				<section>
+					<h4> Take() </h4>
+					<p> //preia datele din baza de date si le transmite unui algoritm care genereaza statistici in R. </p>
+				</section>
+			</section>
+			
+			<section>
+				<h3> Tree </h3>
+				<section>
+					<h4> Update() </h4>
+					<p> //Pagina va fi actualizata de fiecare data cand este introdusa o intrebare noua. </p>
+				</section>
+			</section>
+			
+			<section>
+				<h3> Profile </h3>
+				<section>
+					<h4> Toggle() </h4>
+					<p> //Cand utilizatorol apasa pe profile, va aparea un drop-down unde va fi specificat mail-ol utilizatorol. </p>
+				</section>
+			</section>
+		</section>
+	</body>
+</html>
