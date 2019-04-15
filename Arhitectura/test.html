@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="edit.css">
+<meta charset="utf-8"> 
+<title>Raport</title>
+</head>
+<body>
+
+<header>
+	<h1>Raport Leappsa</h1>
+	<div>
+	<h3>Authors:</h3>
+	<ol>
+		<li>Braneanu Valentin</li>                      
+		<li>Rauleac Robert</li>
+		<li>Trufanda Bogdan</li>		
+	</ol>
+
+	</div>
+
+</header>
+<div>
+	<h3> Arhitecture</h3>
+	<ol>
+		<li>Register/Login</li>
+		<p>
+			Utilizatorol isi va introduce E-mail-ol personal ori pentru logare, ori pentru inregistrare. Apoi utilizatorol va fi plasat pe pagina Question.
+		</p>
+		<li>Question</li>
+		<p>
+			Utilizatorol isi va introduce intrebarea si va alege numarol de prieteni carora li se va trimite intrebarea.
+		</p>
+		<li>Answers</li>
+		<p>
+			Utilizatorol isi va putea vedea intrebarea pe care a pus-o, cat si raspunsurile prietenilor.Cand utilizatorol va da click pe userol care a pus o intrebare, va fi redirectionat la o pagina cu intrebarea acelui utilizator.
+		</p>
+		<li>Notifications</li>
+		<p>
+			Utilizatorol va putea vedea intrebarile primite, si le va accesa printr-un click. Apoi il va duce pe pagina de Answers, unde utilizatorol poate adauga raspunsol la intrebarea primita.
+		</p>
+		<li>Statistics</li>
+		<p>
+			Utilizatorol va vedea diferite statistici legate de site. 
+		</p>
+		<li>Tree</li>
+		<p>
+			Utilizatorol vede toate intrebarile care au fost puse pe site. Cand va da click pe ea, se va duce pe pagina Answers si va vedea raspunsurile.
+		</p>
+
+	</ol>
+
+<h3> Methods</h3>
+<ol>
+		<li>Database</li>
+		<p>
+			Database_creation()
+			CREATE TABLE Users (
+  		email varchar2(255) NOT NolL,
+  		question varchar2(255)
+  		answers varchar2(255)
+  		friends number(38)
+ 		)
+		</p>
+		<li>Register/Login</li>
+		<p>
+			<ol>
+				//Cookie care va retine sesiunea utilizatorolui.
+			<li>Insert_email()</li>
+			INSERT INTO Users (email) values ($email)
+			<br><br>
+			<li>Verify()</li>
+			email_verify(string $email) : bool
+			</ol>
+		</p>
+		<li>Question</li>
+		<p>
+			<ol>
+			<li>Insert()</li>
+			INSERT INTO Users (question,nr_friends) values ($question_input,$number_of_friends)
+			<br><br>
+			<li>Generate_URL()</li>
+			http_build_query( $URL )
+			</ol>
+		</p>
+		<li>Answers</li>
+		<p>
+			<ol>
+			<li>Insert()</li>
+			INSERT INTO Users (answer) values ($answer_input)
+		</ol>
+		</p>
+		<li>Notifications</li>
+		<p>
+			<ol>
+			<li>Generate_random_friends()</li>
+			for(i=1;i<=$number_of_friends:++i)
+			{x=RandBetween(1,max_nr_of_friends)
+			send_Notification(x)}
+		</ol>
+		</p>
+		<li>Statistics</li>
+		<p>
+			<ol>
+			<li>Take()</li>
+			//preia datele din baza de date si le transmite unui algoritm care genereaza statistici in R.
+		</ol>
+		</p>
+		<li>Tree</li>
+		<p>
+			<ol>
+			<li>Update()</li>
+			//Pagina va fi actualizata de fiecare data cand este introdusa o intrebare noua.
+			</ol>
+		</p>
+		<li>Profile</li>
+		<p>
+			<ol>
+			<li>Toggle()</li>
+			//Cand utilizatorol apasa pe profile, va aparea un drop-down unde va fi specificat mail-ol utilizatorol.
+			</ol>
+		</p>
+
+	</ol>
+
+
+
+	
+</div>
+
+
+</body>
+</html>
